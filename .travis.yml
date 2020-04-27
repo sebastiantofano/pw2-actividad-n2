@@ -2,4 +2,14 @@ dist: trusty
 sudo: required
 language: php
 php:
-- 7.3
+- 7.1.3
+services:
+#- docker
+before_script:
+#- docker-compose up -d
+#- docker-compose exec app composer install
+#- cp .env.example .env
+#- docker-compose exec app php artisan migrate
+script:
+#- docker-compose exec PW2-php php test/phpunit.php --testdox .
+php app/test/phpunit.php --testdox app/test
