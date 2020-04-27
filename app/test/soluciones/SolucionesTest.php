@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 //include './app/ArchivoPrueba.php';
 /*Esta linea solo funciona para los test con de docker, porque toma la ruta "./" como la principal del proyecto*/
-include "./soluciones.php";
+include "./app/soluciones.php";
 //include "/var/www/html/test/soluciones.php";
 
 /*Esta linea solo funciona para los test sin docker pero no con travis, travis no tiene la misma ruta al ejecutar esta variable */
