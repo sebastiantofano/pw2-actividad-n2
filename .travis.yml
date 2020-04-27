@@ -6,9 +6,9 @@ php:
 services:
 - docker
 before_script:
-- docker-compose up -d
+#- docker-compose up -d
 #- docker-compose exec app composer install
 #- cp .env.example .env
 #- docker-compose exec app php artisan migrate
 script:
-- docker-compose exec PW2-php php test/phpunit.php --testdox .
+#- docker-compose exec PW2-php php test/phpunit.php --testdox .

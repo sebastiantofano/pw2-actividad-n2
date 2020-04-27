@@ -3,6 +3,7 @@ use PHPUnit\Framework\TestCase;
 //include './app/ArchivoPrueba.php';
 /*Esta linea solo funciona para los test con de docker, porque toma la ruta "./" como la principal del proyecto*/
 include "./soluciones.php";
+//include "/var/www/html/test/soluciones.php";
 
 /*Esta linea solo funciona para los test sin docker pero no con travis, travis no tiene la misma ruta al ejecutar esta variable */
 //include (dirname(__DIR__, 2) . "../soluciones.php");
@@ -82,7 +83,7 @@ class SolucionesTest extends TestCase{
     public function testEjercicio9(){
         $autor = "Autor 5";
 
-        $resultado = "Libro del Autor 5";
+        $resultado = solucionEjercicio9($autor);
 
         $this->assertEquals("Libro del Autor 5", $resultado);
     }
