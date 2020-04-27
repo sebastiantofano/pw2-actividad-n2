@@ -12,4 +12,4 @@ before_script:
 #- docker-compose exec app php artisan migrate
 script:
 #- docker-compose exec PW2-php php test/phpunit.php --testdox .
-php app/test/phpunit.php --testdox app/test
+- php app/test/phpunit.php --testdox app/test
